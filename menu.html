@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100d">
+  <meta name="description" content="Explore the Friends N Bites menu: zinger burgers, shawarma, snacks and shareable deals with prices in Pakistani rupees.">
+  <title>Menu | Friends N Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Friends N Bites home"><span class="brand-mark">F<span>N</span>B</span><span class="brand-name">Friends <b>N</b> Bites<small>BURGERS · SHAWARMA · FAST FOOD</small></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html">Our menu</a><a href="about.html">Our story</a><a href="contact.html">Find us</a><a class="button button-small nav-cta" href="#deals">Order online <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero menu-page-hero"><div class="container page-hero-inner"><p class="eyebrow"><span class="eyebrow-dot"></span> FRESH TASTE, ALWAYS</p><h1>A little something<br>for every <span>craving.</span></h1><p>Find your favourite, try something new, or bring the whole crew. It’s all good from here.</p><div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Our menu</span></div></div><div class="page-hero-decoration" aria-hidden="true">✳</div></section>
+    <section class="section menu-section">
+      <div class="container">
+        <div class="menu-topline"><div><p class="eyebrow">MADE FOR YOUR APPETITE</p><h2>What sounds good?</h2></div><p class="price-note">All prices in <b>PKR</b> · Made fresh to order</p></div>
+        <div class="menu-filters" role="group" aria-label="Filter menu by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="filter-button" type="button" data-filter="deals" aria-pressed="false">Shareable deals</button>
+          <button class="filter-button" type="button" data-filter="burgers" aria-pressed="false">Burgers & snacks</button>
+          <button class="filter-button" type="button" data-filter="shawarma" aria-pressed="false">Shawarma</button>
+        </div>
+        <section class="menu-group" id="deals" data-menu-category="deals">
+          <div class="menu-group-heading"><span class="menu-group-icon" aria-hidden="true">✳</span><div><p class="eyebrow">GOOD FOOD, SHARED</p><h3>Friends & family deals</h3></div><span class="group-rule"></span></div>
+          <div class="deal-menu-grid">
+            <article class="deal-menu-card deal-family" data-product-name="Family Deal" data-product-price="1500"><img class="deal-menu-image" src="images/Family Deal.jpg" alt="Five crispy chicken burgers with a 1.5 litre Pepsi bottle" loading="lazy"><div class="deal-menu-content"><span class="deal-tag">FAMILY FAVOURITE</span><h4>Family Deal</h4><p>5 Zinger Burgers <span>+</span> 1 Bottle · 1.5L</p><div class="deal-menu-bottom"><span class="deal-menu-price">Rs. 1,500</span><button class="add-to-cart" type="button" aria-label="Add Family Deal to cart">Add +</button></div></div><span class="deal-decoration" aria-hidden="true">05</span></article>
+            <article class="deal-menu-card deal-friends" data-product-name="Friends Deal" data-product-price="900"><img class="deal-menu-image" src="images/menu-items/friends-deal.jpg" alt="Crispy chicken burgers with fresh chilies" loading="lazy"><div class="deal-menu-content"><span class="deal-tag">MADE FOR YOUR CREW</span><h4>Friends Deal</h4><p>3 Zinger Burgers <span>+</span> 1 Bottle · 0.5L</p><div class="deal-menu-bottom"><span class="deal-menu-price">Rs. 900</span><button class="add-to-cart" type="button" aria-label="Add Friends Deal to cart">Add +</button></div></div><span class="deal-decoration" aria-hidden="true">03</span></article>
+          </div>
+        </section>
+        <section class="menu-group" id="burgers" data-menu-category="burgers">
+          <div class="menu-group-heading"><span class="menu-group-icon" aria-hidden="true">✦</span><div><p class="eyebrow">STACKED WITH FLAVOUR</p><h3>Burgers & snacks</h3></div><span class="group-rule"></span></div>
+          <div class="menu-list">
+            <article class="menu-item" data-product-name="Hot Wings (5 pcs)" data-product-price="300"><img src="images/menu-items/hot-wings-5.jpg" alt="Crispy chicken wings served with dipping sauce" loading="lazy"><div class="menu-item-info"><h4>Hot Wings <span class="item-quantity">5 pcs</span></h4><p>Crispy, golden and made for sharing.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 300</span><button class="add-to-cart" type="button" aria-label="Add Hot Wings, 5 pieces, to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Hot Wings (10 pcs)" data-product-price="550"><img src="images/menu-items/hot-wings-10.jpg" alt="Golden crispy fried chicken wings on a plate" loading="lazy"><div class="menu-item-info"><h4>Hot Wings <span class="item-quantity">10 pcs</span></h4><p>A bigger batch of that crispy goodness.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 550</span><button class="add-to-cart" type="button" aria-label="Add Hot Wings, 10 pieces, to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Hot Shot (5 pcs)" data-product-price="250"><img src="images/menu-items/hot-shot-5.jpg" alt="Crispy chicken nuggets with a dipping sauce" loading="lazy"><div class="menu-item-info"><h4>Hot Shot <span class="item-quantity">5 pcs</span></h4><p>Little bites with a whole lot of flavour.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 250</span><button class="add-to-cart" type="button" aria-label="Add Hot Shot, 5 pieces, to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Hot Shot (10 pcs)" data-product-price="500"><img src="images/menu-items/hot-shot-10.jpg" alt="Crispy chicken nuggets with dipping sauce and tomatoes" loading="lazy"><div class="menu-item-info"><h4>Hot Shot <span class="item-quantity">10 pcs</span></h4><p>Double the bites, double the good mood.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 500</span><button class="add-to-cart" type="button" aria-label="Add Hot Shot, 10 pieces, to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Burger with Cheese" data-product-price="350"><img src="images/menu-items/zinger-cheese.jpg" alt="Crispy chicken burger with cheddar cheese" loading="lazy"><div class="menu-item-info"><h4>Zinger Burger with Cheese</h4><p>Our crunchy zinger with a cheesy finish.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 350</span><button class="add-to-cart" type="button" aria-label="Add Zinger Burger with Cheese to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Shawarma with Cheese" data-product-price="350"><img src="images/menu-items/zinger-shawarma-cheese.jpg" alt="Chicken shawarma wraps with fresh vegetables" loading="lazy"><div class="menu-item-info"><h4>Zinger Shawarma with Cheese</h4><p>Crunchy zinger, wrapped with cheese.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 350</span><button class="add-to-cart" type="button" aria-label="Add Zinger Shawarma with Cheese to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Patty Burger" data-product-price="250"><img src="images/menu-items/patty-burger.jpg" alt="Beef burger sliced to show its patty and fillings" loading="lazy"><div class="menu-item-info"><h4>Patty Burger</h4><p>A classic burger for an easy craving.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 250</span><button class="add-to-cart" type="button" aria-label="Add Patty Burger to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Patty Burger with Cheese" data-product-price="300"><img src="images/menu-items/patty-burger-cheese.jpg" alt="Double beef cheeseburger with fries" loading="lazy"><div class="menu-item-info"><h4>Patty Burger with Cheese</h4><p>Your classic, made extra cheesy.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 300</span><button class="add-to-cart" type="button" aria-label="Add Patty Burger with Cheese to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Chicken Platter with 2 bread" data-product-price="550"><img src="images/menu-items/chicken-platter.jpg" alt="Grilled chicken served with wraps and fresh vegetables" loading="lazy"><div class="menu-item-info"><h4>Chicken Platter <span class="item-quantity">with 2 bread</span></h4><p>A hearty chicken platter to tuck into.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 550</span><button class="add-to-cart" type="button" aria-label="Add Chicken Platter with 2 bread to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Platter with 2 bread" data-product-price="650"><img src="images/menu-items/zinger-platter.jpg" alt="Crispy fried chicken platter with bread and fries" loading="lazy"><div class="menu-item-info"><h4>Zinger Platter <span class="item-quantity">with 2 bread</span></h4><p>A zinger platter with a satisfying crunch.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 650</span><button class="add-to-cart" type="button" aria-label="Add Zinger Platter with 2 bread to cart">Add +</button></div></div></article>
+          </div>
+        </section>
+        <section class="menu-group" id="shawarma" data-menu-category="shawarma">
+          <div class="menu-group-heading"><span class="menu-group-icon" aria-hidden="true">↗</span><div><p class="eyebrow">WRAPPED UP RIGHT</p><h3>Shawarma & more</h3></div><span class="group-rule"></span></div>
+          <div class="menu-list">
+            <article class="menu-item" data-product-name="Zinger Burger (Large)" data-product-price="300"><img src="images/menu-items/zinger-large.jpg" alt="Large crispy chicken burger with fries" loading="lazy"><div class="menu-item-info"><h4>Zinger Burger <span class="item-quantity">Large</span></h4><p>A generously sized zinger burger.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 300</span><button class="add-to-cart" type="button" aria-label="Add large Zinger Burger to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Shawarma (Large)" data-product-price="300"><img src="images/menu-items/zinger-shawarma-large.jpg" alt="Grilled shawarma wrap sliced to show its filling" loading="lazy"><div class="menu-item-info"><h4>Zinger Shawarma <span class="item-quantity">Large</span></h4><p>A hearty zinger shawarma, wrapped fresh.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 300</span><button class="add-to-cart" type="button" aria-label="Add large Zinger Shawarma to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Burger (Small)" data-product-price="250"><img src="images/menu-items/zinger-small.jpg" alt="Crispy chicken burger with lettuce and cheese" loading="lazy"><div class="menu-item-info"><h4>Zinger Burger <span class="item-quantity">Small</span></h4><p>All the crunch in a smaller bite.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 250</span><button class="add-to-cart" type="button" aria-label="Add small Zinger Burger to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Shawarma (Small)" data-product-price="250"><img src="images/menu-items/zinger-shawarma-small.jpg" alt="Handheld chicken shawarma wrap with fresh filling" loading="lazy"><div class="menu-item-info"><h4>Zinger Shawarma <span class="item-quantity">Small</span></h4><p>A little wrap with plenty of flavour.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 250</span><button class="add-to-cart" type="button" aria-label="Add small Zinger Shawarma to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Chicken Shawarma (Large)" data-product-price="200"><img src="images/menu-items/chicken-shawarma-large.jpg" alt="Chicken shawarma wrap served with fries" loading="lazy"><div class="menu-item-info"><h4>Chicken Shawarma <span class="item-quantity">Large</span></h4><p>Chicken and flavour, rolled up fresh.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 200</span><button class="add-to-cart" type="button" aria-label="Add large Chicken Shawarma to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Chicken Shawarma (Small)" data-product-price="150"><img src="images/menu-items/chicken-shawarma-small.jpg" alt="Chicken shawarma wrapped in flatbread" loading="lazy"><div class="menu-item-info"><h4>Chicken Shawarma <span class="item-quantity">Small</span></h4><p>A quick, flavour-packed favourite.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 150</span><button class="add-to-cart" type="button" aria-label="Add small Chicken Shawarma to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Chicken Paratha Roll" data-product-price="300"><img src="images/menu-items/chicken-paratha-roll.jpg" alt="Spicy chicken rolls wrapped in flatbread" loading="lazy"><div class="menu-item-info"><h4>Chicken Paratha Roll</h4><p>Chicken wrapped in a warm paratha.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 300</span><button class="add-to-cart" type="button" aria-label="Add Chicken Paratha Roll to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Zinger Paratha Roll" data-product-price="350"><img src="images/menu-items/zinger-paratha-roll.jpg" alt="Chicken-filled wraps with a toasted flatbread" loading="lazy"><div class="menu-item-info"><h4>Zinger Paratha Roll</h4><p>A crispy zinger tucked into a paratha.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 350</span><button class="add-to-cart" type="button" aria-label="Add Zinger Paratha Roll to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Omelette Burger" data-product-price="150"><img src="images/menu-items/omelette-burger.jpg" alt="Pakistani-style egg burger served with fries and a cold drink" loading="lazy"><div class="menu-item-info"><h4>Omelette Burger</h4><p>A comfort-food classic with an eggy twist.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 150</span><button class="add-to-cart" type="button" aria-label="Add Omelette Burger to cart">Add +</button></div></div></article>
+            <article class="menu-item" data-product-name="Double Omelette Burger" data-product-price="200"><img src="images/menu-items/double-omelette-burger.jpg" alt="Double-layer burger with egg and cheese" loading="lazy"><div class="menu-item-info"><h4>Double Omelette Burger</h4><p>Double up on this satisfying burger.</p><div class="menu-item-bottom"><span class="menu-price">Rs. 200</span><button class="add-to-cart" type="button" aria-label="Add Double Omelette Burger to cart">Add +</button></div></div></article>
+          </div>
+        </section>
+        <div class="menu-footnote"><span aria-hidden="true">✳</span> Have a question about an item? <a href="tel:+923165336343">Give us a call</a> and we’ll be happy to help.</div>
+        <button class="cart-fab" type="button" data-open-cart aria-haspopup="dialog"><span aria-hidden="true">🛒</span> Your order <span class="cart-count" data-cart-count>0</span><span class="cart-fab-total" data-cart-total>Rs. 0</span></button>
+        <dialog class="cart-dialog" aria-labelledby="cart-title">
+          <form class="cart-form" id="checkout-form">
+            <div class="cart-header"><div><p class="eyebrow">YOUR GOOD FOOD</p><h2 id="cart-title">Your order</h2></div><button class="cart-close" type="button" data-close-cart aria-label="Close order">×</button></div>
+            <div class="cart-empty" data-cart-empty>Your cart is empty. Add a bite from the menu to get started.</div>
+            <ul class="cart-items" data-cart-items aria-live="polite"></ul>
+            <div class="cart-total-row"><span>Order total</span><strong data-checkout-total>Rs. 0</strong></div>
+            <div class="checkout-fields">
+              <label>Your name<input name="customerName" autocomplete="name" required></label>
+              <label>Mobile number<input name="customerPhone" type="tel" autocomplete="tel" required placeholder="03xx xxxxxxx"></label>
+              <label>Pickup or delivery<select name="fulfilment"><option value="Pickup">Pickup</option><option value="Delivery">Delivery</option></select></label>
+              <label class="delivery-address" hidden>Delivery address<input name="address" autocomplete="street-address"></label>
+            </div>
+            <fieldset class="payment-options"><legend>How would you like to pay?</legend>
+              <label><input type="radio" name="payment" value="JazzCash" required><span>JazzCash</span></label>
+              <label><input type="radio" name="payment" value="Easypaisa"><span>Easypaisa</span></label>
+              <label><input type="radio" name="payment" value="Bank transfer"><span>Bank transfer</span></label>
+            </fieldset>
+            <p class="payment-notice">We’ll confirm the correct account details with you directly. This order request does not charge you or process a payment.</p>
+            <button class="button checkout-submit" type="submit">Continue in WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="checkout-terms">Your order is sent to Friends N Bites for confirmation. Prices are in PKR.</p>
+          </form>
+        </dialog>
+      </div>
+    </section>
+    <section class="menu-cta"><div class="container menu-cta-inner"><div><p class="eyebrow eyebrow-light">THAT CRAVING CALLING?</p><h2>Let’s make it a good one.</h2></div><a class="button button-light" href="tel:+923165336343">Call 0316 5336343 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">F<span>N</span>B</span><span class="brand-name">Friends <b>N</b> Bites<small>BURGERS · SHAWARMA · FAST FOOD</small></span></a><p>Fresh taste. Good company.<br>That’s the Friends N Bites way.</p><a class="footer-phone" href="tel:+923165336343">0316 5336343 <span aria-hidden="true">↗</span></a></div><div class="container footer-bottom"><span>© <span data-current-year></span> Friends N Bites</span><div><a href="menu.html">Menu</a><a href="contact.html">Contact</a></div><span>MADE FOR GOOD TIMES</span></div></footer>
+</body>
+</html>
